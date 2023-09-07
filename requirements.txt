@@ -1,0 +1,6 @@
+Frontend:
+npm/node
+react-router-dom (npm install react-router-dom)
+
+Backend
+fastapi/uvicorn (pip install fastapi uvicorn)

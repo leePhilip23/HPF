@@ -1,0 +1,49 @@
+/* Header.css */
+.header {
+   display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  justify-content: center; /* Center-align the grid horizontally */
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.5); /* Change to your desired background color */
+  color: white; /* Change to your desired text color */
+  padding: 10px 20px;
+  height: 10vh; /* Set header height to 100% of the viewport height */
+  }
+  
+  .chatbot-button {
+    color: white; /* Change to your desired button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 0px 250px 0px 250px;
+    cursor: pointer;
+    max-height: 6vh;
+  }
+
+  .chatbot-button .gears {
+    max-height: 6vh;
+  }
+  
+  .nav-buttons {
+  }
+  .nav-buttons button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .gm-logo {
+    max-height: 10vh;
+  }
+  /* Center the image both horizontally and vertically */
+
+.header .gm-logo-container {
+  display: flex;
+  justify-content: center;
+}
+.gm-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+.chatbot-page {
+    min-height: 100vh;
+    background-color: #4066E0;
+}
+
+.chatbot-header {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    justify-content: center; /* Center-align the grid horizontally */
+    align-items: center;
+    color: white; /* Change to your desired text color */
+    padding: 20px 20px;
+    height: 10vh; /* Set header height to 100% of the viewport height */
+    
+}
+
+.chatbot-gears-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.chatbot-logo-container {
+    display: flex;
+    justify-content: right;
+}
+.chatbot-gm-logo {
+    max-height: 10vh;
+    
+}
+
+.chatbot-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
