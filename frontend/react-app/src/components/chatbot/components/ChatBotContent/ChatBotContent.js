@@ -1,10 +1,12 @@
 import React, {useState, useEffect}  from 'react';
 import './ChatBotContent.css';
+import ChatInput from './components/ChatInput/ChatInput.js';
+import ChatResponse, {ChatGreeting} from './components/ChatResponse/ChatResponse.js'
 
 function ChatBotContent({ userInput }) {
 
-    const [interactions, setInteractions] = useState([]);
-
+    const [interactions, setInteractions] = useState([
+    ]);
     useEffect(() => {
         if (userInput) {
             handleSubmit();
@@ -39,14 +41,16 @@ function ChatBotContent({ userInput }) {
 
     const inputs = interactions.map((interaction, index) => interaction.input);
     const responses = interactions.map((interaction, index) => interaction.response);
-
     return (
         <div className="chat-container">
+            <div className="chat-greeting">
+                <ChatGreeting />
+            </div>
             {interactions.map((interaction, index) => (
             <div key={index} className="chat-item">
                 <div className="chat-message">
-                    <div className="chat-input">{interaction.input}</div>
-                    <div className="chat-response">{interaction.response}</div>
+                    {interaction.input && <ChatInput text={interaction.input} /> }
+                    <ChatResponse text={interaction.response}/>
                 </div>
             </div>
             ))}

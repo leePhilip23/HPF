@@ -1,6 +1,15 @@
 .chatbot-page {
-    min-height: 100vh;
-    background-color: #4066E0;
+  min-height: 100vh;
+  background-color: #4066E0;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2; /* Allow the content container to grow and push TextInput down */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
 }
 
 .chatbot-header {
@@ -9,7 +18,6 @@
     justify-content: center; /* Center-align the grid horizontally */
     align-items: center;
     color: white; /* Change to your desired text color */
-    padding: 20px 20px;
     height: 10vh; /* Set header height to 100% of the viewport height */
     
 }
@@ -19,23 +27,30 @@
     justify-content: center;
 }
 
+
+.chatbot-header-gears {
+    padding-top: 10px;
+}
+
 .sidebar {
     
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    height: 75%;
+    width: 50%;
+    margin-left: 10px;
 }
 
 .chatbot-logo-container {
     display: flex;
     justify-content: right;
+    margin-top: -15px;
 }
 .chatbot-gm-logo {
     max-height: 10vh;
-    
 }
 
 .chatbot-input {
-    position: absolute;
     bottom: 0;
     width: 100%;
 }

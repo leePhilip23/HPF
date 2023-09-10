@@ -2,10 +2,11 @@
 .chat-container {
     display: flex;
     flex-direction: column; /* Stack interactions from the bottom up */
+    margin-top: 30px;
   }
   
   .chat-item {
-    display: flex;
+    display: grid;
     justify-content: center; /* Align interactions to the left */
   }
   
@@ -14,28 +15,9 @@
     margin: 4px;
     border-radius: 4px;
   }
-  
-  .chat-response {
-    align-self: flex-end; /* Align input messages to the right */
-    background-color: #b0e0e6; /* Example background color for input messages */
 
-    padding: 8px;
-    margin: 4px;
-    border-radius: 10px 10px 10px 0px;
-    max-width: 150px;
-    min-width: 150px;
-    word-wrap: break-word;
+  .chat-greeting {
+    margin-left: 233px;
   }
-  
-  .chat-input{
-    align-self: flex-start; /* Align response messages to the left */
-    background-color: #f0f0f0; /* Example background color for response messages */
 
-    padding: 8px;
-    margin: 4px 0px 0px 1250px;
-    border-radius: 10px 10px 0 10px;
-    max-width: 150px;
-    min-width: 150px;
-    word-wrap: break-word;
-  }
   

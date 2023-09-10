@@ -1,0 +1,23 @@
+.chat-input{
+    align-self: flex-start; /* Align response messages to the left */
+    background-color: #D9D9D9; /* Example background color for response messages */
+    padding: 8px 20px 20px 20px;
+    margin: 4px 10px 0px 1200px;
+    border-radius: 10px 10px 0 10px;
+    max-width: 150px;
+    min-width: 150px;
+    word-wrap: break-word;
+  }
+
+  .chat-input-circle {
+    height: 40px;
+    width: 40px;
+    background-color: salmon;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin: 50px 0px 0px 0px;
+  }
+  .chat-input-container {
+    display: flex;
+    align-items: flex-end;
+  }
